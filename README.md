@@ -33,4 +33,4 @@ The visual is designed to replace or enhance the default Power BI date slicer wi
 ## Support
 For questions, issues, or feature requests, contact:
 
-**Email:** support@solverix.io
+**Email:** info@thesolverix.com
