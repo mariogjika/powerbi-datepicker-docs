@@ -17,7 +17,7 @@ The visual is designed to replace or enhance the default Power BI date slicer wi
 ---
 
 ## Common Issues
-- Ensure the bound field is of type **Date** or **DateTime**.
+- Ensure the bound field is of type **Date**.
 - Verify that page-level or report-level filters are not overriding the visual.
 - If filters appear incorrect, clear existing filters and reapply the selection.
 
