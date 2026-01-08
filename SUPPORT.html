@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Support & Usage — Date Picker Slicer</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f6f7fb;
+        --card: #ffffff;
+        --text: #1f1f1f;
+        --muted: #5d6370;
+        --accent: #4f6bed;
+        --border: rgba(0, 0, 0, 0.08);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.6;
+      }
+      main {
+        max-width: 900px;
+        margin: 48px auto 64px;
+        padding: 0 24px;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 28px;
+        box-shadow: 0 10px 28px rgba(0, 0, 0, 0.06);
+      }
+      h1 {
+        margin: 0 0 12px;
+        font-size: 2rem;
+        letter-spacing: -0.02em;
+      }
+      h2 {
+        margin-top: 28px;
+        font-size: 1.2rem;
+      }
+      p {
+        margin: 0 0 12px;
+        color: var(--muted);
+      }
+      ol,
+      ul {
+        padding-left: 18px;
+        color: var(--muted);
+      }
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .callout {
+        border-left: 3px solid var(--accent);
+        padding: 8px 12px;
+        background: rgba(79, 107, 237, 0.08);
+        border-radius: 8px;
+        color: var(--text);
+        margin: 8px 0 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article class="card">
+        <h1>Support & Usage — Date Picker Slicer</h1>
+        <p>Guidance for adding the visual to a report, configuring fields, and troubleshooting common issues.</p>
+
+        <h2>Add the visual</h2>
+        <ol>
+          <li>Power BI Desktop → <strong>Get more visuals</strong> → <strong>Import a visual from file</strong>.</li>
+          <li>Select the <code>.pbiviz</code> file and add the visual to the canvas.</li>
+        </ol>
+
+        <h2>Bind a Date field</h2>
+        <ol>
+          <li>In the Fields pane, drag a date column into the visual’s <strong>Date</strong> field well.</li>
+          <li>The visual will automatically use the bound date field to filter the report.</li>
+        </ol>
+        <div class="callout">Tip: Use a clean Date column (not text) for the best results.</div>
+
+        <h2>Choose a selection mode</h2>
+        <ul>
+          <li>Use the dropdown to pick a preset such as <em>Custom range</em> or <em>Exact date</em>.</li>
+          <li>Open <strong>Format → Selection options</strong> to enable more presets (rolling, fiscal, ISO weeks).</li>
+        </ul>
+
+        <h2>Tooltips</h2>
+        <ul>
+          <li>Hover over the visual to see a summary of the current selection.</li>
+          <li>Add measures to the <strong>Tooltips</strong> field well to display values in the tooltip.</li>
+          <li>Range selections show <strong>From</strong>, <strong>To</strong>, and the range length.</li>
+        </ul>
+
+        <h2>Troubleshooting</h2>
+        <ul>
+          <li><strong>No data or blank visual:</strong> Ensure a date field is bound in the Date field well.</li>
+          <li><strong>Selection doesn’t apply:</strong> Check <strong>Format → Behavior</strong> for Apply vs Auto-apply.</li>
+          <li><strong>Unexpected dates:</strong> Verify your data type is Date/DateTime and the report is refreshed.</li>
+          <li><strong>Tooltip missing measures:</strong> Add measures to the Tooltips field well.</li>
+        </ul>
+
+        <h2>Support</h2>
+        <p>
+          For issues or feature requests, open a ticket at
+          <a href="https://github.com/mariogjika/powerbi-datepicker-slicer/issues">GitHub Issues</a>.
+        </p>
+      </article>
+    </main>
+  </body>
+</html>
