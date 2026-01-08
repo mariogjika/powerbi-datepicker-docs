@@ -10,7 +10,7 @@ The visual is designed to replace or enhance the default Power BI date slicer wi
 ## Getting Started
 1. Import **Datepicker by Solverix** from Microsoft AppSource.
 2. Add the visual to your Power BI report.
-3. Bind a field of type **Date** or **DateTime**.
+3. Bind a field of type **Date**.
 4. Select a preset range or define a custom date range.
 5. The visual will apply filters to other visuals on the page.
 
